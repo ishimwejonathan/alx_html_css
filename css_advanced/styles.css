@@ -1,113 +1,238 @@
-/* styles.css */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Layout */
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-header {
-  background-color: #000; /* or the actual color from Figma */
-  padding: 20px 40px;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: white;
+  background-color: #071629;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-nav img {
-  height: 40px;
+/* Header */
+.site-header {
+  padding: 20px 0;
 }
 
-nav ul {
-  display: flex;
+.site-header .logo {
+  height: 30px;
+}
+
+.site-header nav ul {
   list-style: none;
+  display: flex;
   gap: 30px;
+  justify-content: flex-end;
 }
 
-nav ul li a {
-  color: white;
+.site-header nav a {
   text-decoration: none;
-  font-weight: 700;
-}
-.hero {
-  background-image: url('./images/banner-background.png'); /* Update this path to match your image */
-  background-size: cover;
-  background-position: center;
   color: white;
-  padding: 100px 40px;
-  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
 }
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 400px 400px;
+  background-image: url("images/Object.png"); /* <-- use your image name */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero .tags {
+  font-size: 16px;
+  color: #a0a0a0;
   margin-bottom: 20px;
 }
 
-.hero span {
-  margin: 0 10px;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.hero button {
-  margin-top: 30px;
-  padding: 15px 30px;
+.btn-purple {
   background-color: #C271FF;
+  color: white;
+  padding: 12px 24px;
   border: none;
-  border-radius: 30px;
-  color: white;
+  border-radius: 20px;
   font-weight: bold;
-  font-size: 1rem;
   cursor: pointer;
-  
-}
-/* === Quote Section === */
-.quote {
-  background-color: #C271FF; /* Or the purple from Figma */
-  padding: 80px 20px;
-  color: white;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
-.quote-container {
+.hero .subtitle {
+  font-size: 20px;
+  margin: 40px 0 20px;
+}
+
+/* Pros */
+.pros {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 40px;
-  max-width: 900px;
-  margin: auto;
   flex-wrap: wrap;
 }
 
-.quote-img {
-  width: 160px;
-  height: 160px;
+.pro {
+  text-align: center;
+}
+
+.pro img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid white;
 }
 
-.quote-text {
-  max-width: 500px;
-}
-
-.quote-text blockquote {
-  font-style: italic;
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.quote-text h3 {
+.pro h3 {
+  margin-top: 10px;
+  font-size: 16px;
   font-weight: bold;
-  margin-bottom: 5px;
 }
+
+.pro p {
+  font-size: 12px;
+  color: #a0a0a0;
+  margin-top: 5px;
+}
+
 
 .quote-text p {
   font-style: italic;
   font-size: 0.9rem;
+}
+.videos {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.videos h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.videos h2 .gray {
+  color: #333;
+}
+
+.videos h2 .purple {
+  color: #C271FF;
+}
+
+.video-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.video-card {
+  background-color: white;
+  width: 220px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 0 0 20px;
+}
+
+.video-card img:first-child {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.video-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.video-card p {
+  font-size: 14px;
+  color: #777;
+  margin: 0 10px 10px;
+}
+
+.video-card .author {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  gap: 10px;
+}
+
+.video-card .author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.video-card .author h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.video-card .stars {
+  display: flex;
+  margin: 10px;
+  color: #C271FF;
+}
+
+.video-card .duration {
+  font-size: 12px;
+  text-align: right;
+  margin: 0 10px;
+  color: #777;
+}
+.quote {
+  background-color: #c271ff; /* purple background from Figma */
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.quote-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quote-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.quote-text {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.quote-author {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.quote-title {
+  font-style: italic;
+  font-size: 14px;
 }
