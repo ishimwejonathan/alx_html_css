@@ -236,3 +236,62 @@ body {
   font-style: italic;
   font-size: 14px;
 }
+.membership {
+  background-color: #071629;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.membership h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.membership h2 span {
+  color: #C271FF;
+}
+
+.membership-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.membership .card {
+  width: 200px;
+  text-align: center;
+}
+
+.membership .card img {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.membership .card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.membership .card p {
+  font-size: 14px;
+  color: #AAA;
+}
+
+.register-btn {
+  background-color: #C271FF;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.register-btn:hover {
+  background-color: #a94de5;
+}
